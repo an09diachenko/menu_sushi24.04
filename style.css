@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #444;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+section {
+    padding: 15px 0px;
+}
+.header {
+    padding: 15px 0px;  
+}
+h2 {
+    font-size: 1.8em;
+    text-transform: uppercase; 
+    text-transform: uppercase; 
+}
+h2 span {
+    color: #ff0000;
+}
+.slogan {
+    color: #b7b7b7;
+    font-size: 28px;
+}
+.phone, .footer .logo {
+    text-align: center;
+}
+.button {
+    display: block;
+    background-color: #ff0000;
+    padding: 7px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.49)
+}
+.banner {
+    background-image: url(images/slide-410f90b8-b5df-4b71-a756-0c413a94916f.jpg);
+    height: 500px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.action .container { 
+    border: 1px solid #c9c9c9; 
+}
+.deadline ul {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.deadline ul::after {
+    display: block;
+    text-align: center;
+}
+.day::after {
+    content: "дни";
+}
+.hour::after {
+    content: "часы";
+}
+.minute::after {
+    content: "минуты";
+}
+.second::after {
+    content: "секунды";
+}
+.deadline li {
+    font-size: 3.5em;
+    background-image: url(images/flip.png);
+    width: 55px;
+    height: 89px;
+    text-align: center;
+    line-height: 89px;
+    float: left;
+    position: relative;
+    background-size: contain;
+}
+.deadline li::after {
+    content: "";
+    display: block;
+    background-image: url(images/flip_gradient.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+}
+.hours strong {
+    display: block;
+}
+.clock, .bicycle, .heart {
+    background-repeat: no-repeat;
+    padding-left: 46px;
+}
+.clock {
+    background-image: url(images/clock.png);
+}
+.bicycle {
+    background-image: url(images/bicycler.png);
+}
+.heart {
+    background-image: url(images/heart.png);
+}
+.border {
+    border: 3px solid #c9c9c9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.first_menu img {
+    float: left;   
+}
+.border strong {
+    display: block;
+    margin-top: 30px; 
+}
+
+
+/*Начало домашнего задания*/
+.menu img {
+    display: block;
+    margin: 10px auto;
+}
+h5 {
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+}
+.menu p {
+    text-align: center;
+}
+.price .button {
+    background-color: #ff0000;
+    width: 120px; 
+}
+.price  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price p {
+    display: block;
+/*    border: 1px solid #000;*/
+    
+    margin: 0px;
+}
+.price span {
+    color: #dd0000;
+    font-weight: bold;
+    font-size: 40px;
+}
+/*Конец домашнего задания*/
+
+
+
+@media screen and (max-width:992px) {
+    .banner {
+        height: 400px; 
+    }
+    .deadline li {
+        font-size: 2.5em;
+        width: 39px;
+        height: 63px;
+        line-height: 63px; 
+    }
+    
+    .title {
+        font-size: 0.9em;
+    }
+    .border {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+    .deadline {
+        text-align: center;
+    }
+    
+    .border {
+        text-align: left;
+    }
+}
