@@ -123,9 +123,6 @@ h2 span {
     display: block;
     margin-top: 30px; 
 }
-
-
-/*Начало домашнего задания*/
 .menu img {
     display: block;
     margin: 10px auto;
@@ -146,11 +143,10 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0px -15px;
 }
 .price p {
-    display: block;
-/*    border: 1px solid #000;*/
-    
+    padding-left: 15px;
     margin: 0px;
 }
 .price span {
@@ -158,10 +154,62 @@ h5 {
     font-weight: bold;
     font-size: 40px;
 }
-/*Конец домашнего задания*/
-
-
-
+.line {
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+.line::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #c9c9c9;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 50%; 
+    z-index: 5;
+}
+.line b {
+    display: inline-block;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    padding: 0px 30px;
+    font-weight: normal; 
+}
+.gift img {
+    width: 100%;
+}
+.about p {
+    text-align: center;
+}
+.video .border {
+    background-color: rgba(201, 201, 201, 0.4); 
+}
+.video iframe {
+    display: block;
+    width: 100%;
+    height: 315px;
+}
+.сertificates img {
+    width: 100%;
+}
+.pic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 15px auto;
+    box-shadow: 0 0 0 10px #ff0000,
+                0 0 0 20px #000;
+}
+.pic img {
+    width: 100%;
+}
+.reviews p {
+    margin-top: 45px;
+    text-align: center;
+}
 @media screen and (max-width:992px) {
     .banner {
         height: 400px; 
@@ -172,14 +220,15 @@ h5 {
         height: 63px;
         line-height: 63px; 
     }
-    
     .title {
         font-size: 0.9em;
     }
     .border {
         text-align: center;
     }
-    
+    .video iframe {
+        height: 250px;
+    }
 }
 @media screen and (max-width: 768px) {
     .banner {
@@ -188,7 +237,6 @@ h5 {
     .deadline {
         text-align: center;
     }
-    
     .border {
         text-align: left;
     }
